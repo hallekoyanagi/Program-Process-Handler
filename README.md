@@ -9,19 +9,22 @@ A program that uses fork() and parent/child processes to handle background proce
 ### 1. ``` bg <filename> ```
 This command begins execution of the file with file name *filename*. If the file does not exist, user is informed by a message in the terminal. (See issue 1)
 
-### 2. ``` bgkill <pid> ```
+### 2. ``` bglist ```
+This command prints a list of programs currently executing in the background. This list is limited to programs executed by this program.
+
+### 3. ``` bgkill <pid> ```
 This command terminates the process with process ID *pid* by sending the the process the TERM signal. This has no affect on already terminated processes.
 
-### 3. ``` bgstop <pid> ``` 
+### 4. ``` bgstop <pid> ``` 
 This command pauses the process with process ID *pid* by sending the the process the STOP signal. This has no effect on already stopped processes.
 
-### 4. ``` bgstart <pid> ``` 
+### 5. ``` bgstart <pid> ``` 
 This command restarts a the process with process ID *pid* that was previously stopped by sending the the process the CONT signal. This has no affect on processes that are not stopped.
 
-### 5. ``` pstat <pid> ```
+### 6. ``` pstat <pid> ```
 This command prints out statistics related to the process with process ID *pid* to the terminal.
 
-If no process at process ID *pid* exists, commands 2 thru 5 print an error message to the terminal.
+If no process at process ID *pid* exists, commands 3 thru 6 print an error message to the terminal.
 
 ## To Run:
 in terminal,

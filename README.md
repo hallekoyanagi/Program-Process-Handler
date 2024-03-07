@@ -1,6 +1,6 @@
 # Program-Process-Handler
 ## Description:
-Academic Project - Third Year
+Academic Project - Second Year
 
 Written in C
 
